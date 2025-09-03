@@ -1,0 +1,81 @@
+# ---- Python bytecode & caches ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# ---- Virtual environments ----
+.venv/
+venv/
+.mcp/  # local venv created in some setups
+.venv*/
+.mcp*/
+
+# ---- Environment & secrets ----
+.env
+.env.*
+.streamlit/secrets.toml
+
+# ---- Build / packaging ----
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# ---- Tooling caches & test artifacts ----
+.pytest_cache/
+.cache/
+.mypy_cache/
+.pytype/
+.tox/
+.coverage*
+htmlcov/
+coverage.xml
+
+# ---- Editors & OS cruft ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---- Logs ----
+logs/
+*.log
+
+# ---- App artifacts ----
+artifacts/            # trained models, joblib files, reports
+models/
+checkpoints/
+*.joblib
+*.bin
+*.pt
+*.pth
+*.onnx
+
+# ---- RAG / temp ----
+rag_index/
+tmp/
+temp/
+*.tmp
+
+# ---- Data (keep samples via exceptions) ----
+data/*.jsonl
+data/*.csv
+data/*.txt
+data/*.pdf
+!data/README.md
+!data/samples/**
+
+# ---- Notebooks (optional; uncomment to ignore all) ----
+# *.ipynb
+# .ipynb_checkpoints/
+
+# ---- Hugging Face / Transformers caches (if stored locally) ----
+# hf_cache/
+# transformers_cache/
+
+# ---- MCP Inspector / local tokens (if any) ----
+# .mcp_proxy_token
+replay_commits.sh
+replay_commits.sh*/
